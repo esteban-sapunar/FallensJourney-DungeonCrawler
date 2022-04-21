@@ -7,4 +7,12 @@ public class Item : ScriptableObject
 	new public string name = "New Item";
 	public Sprite icon = null;
 
+	//Methods
+	public virtual void Use(){
+		Debug.Log("Using "+name);
+	}
+	public void RemoveFromInventory(){
+		Inventory.instance.Remove(this);
+	}
+
 }

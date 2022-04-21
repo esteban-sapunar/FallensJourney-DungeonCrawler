@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58c9424ecdf05404e8dff2b18dc25eb1, type: 3}
-  m_Name: Test Item
+  m_Name: Mushrooms
   m_EditorClassIdentifier: 
-  name: Sword
-  icon: {fileID: 21300000, guid: 23c58dba7d7655d42838aac26d69b8d2, type: 3}
+  name: Mushrroms
+  icon: {fileID: 21300000, guid: 791a40b32e3b19240ab4f1c00843c245, type: 3}

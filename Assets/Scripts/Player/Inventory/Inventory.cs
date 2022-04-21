@@ -39,9 +39,9 @@ public class Inventory : MonoBehaviour
 	}
 
 	public void Remove (Item item){
+		items.Remove(item);
 		if(OnItemChangedCallback != null){
 			OnItemChangedCallback.Invoke();	
 		}
-		items.Remove(item);
 	}
 }
