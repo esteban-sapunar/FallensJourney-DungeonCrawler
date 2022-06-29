@@ -6,6 +6,7 @@ public class InventorySlot : MonoBehaviour
 	//Values
     Item item;
     public Image icon;
+    public GameObject panel;
 
     //Methods
     public void AddItem(Item newItem){
@@ -21,15 +22,17 @@ public class InventorySlot : MonoBehaviour
     public virtual void OnRemoveButton(){
     	Inventory.instance.Remove(item);
     }
-    public void UseItem(){
-    	if(item != null){
-    		item.Use();
-    	}
-    }
     public void OpenItem(){
     	if(item != null){
-    		Debug.Log("Open "+item.name);
-    	}
+            panel.SetActive(true);
+            panel.GetComponent<ItemPanelController>().OpenPanel(item,false,false);
+        }
+    }
+    public void OpenTradeItem(){
+        if(item != null){
+            panel.SetActive(true);
+            panel.GetComponent<ItemTradePanel>().OpenPanel(item,item.value,false,false);
+        }
     }
 
 }

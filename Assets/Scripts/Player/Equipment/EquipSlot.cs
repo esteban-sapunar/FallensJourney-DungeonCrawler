@@ -6,6 +6,7 @@ public class EquipSlot : MonoBehaviour
 	//Values
     public Equipment item;
     public Image icon;
+    public GameObject panel;
 
     //Methods
     public void AddEquipment(Equipment newItem){
@@ -28,7 +29,8 @@ public class EquipSlot : MonoBehaviour
     }
     public void OpenEquipment(){
     	if(item != null){
-    		Debug.Log("Open "+item.name);
-    	}
+            panel.SetActive(true);
+            panel.GetComponent<ItemPanelController>().OpenPanel(item,true,false);
+        }
     }
 }

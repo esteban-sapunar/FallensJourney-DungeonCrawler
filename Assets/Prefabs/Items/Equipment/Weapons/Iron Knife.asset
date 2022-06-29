@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a36aa60c04e0649ae048df7a9fb483, type: 3}
+  m_Name: Iron Knife
+  m_EditorClassIdentifier: 
+  name: Iron Knife
+  icon: {fileID: 21300000, guid: f0d6cdfefd08cfe4daa917cd687061a9, type: 3}
+  description: Old iron knife.
+  value: 5
+  tier: 1
+  healValue: 0
+  attackModifier: 6
+  armorModifier: 0
+  defenseModifier: 2
+  weightModifier: 1
+  equipSlot: 4

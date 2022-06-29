@@ -15,9 +15,12 @@ public class Equipment : Item
 
 	//Methods
 	public override void Use(){
-		Debug.Log("Equiping "+name);
 		EquipmentManager.instance.Equip(this);
 		RemoveFromInventory();
+	}
+	public override void UnEquip(){
+		int slotIndex = (int)equipSlot;
+		EquipmentManager.instance.Unequip(slotIndex);
 	}
 
 }

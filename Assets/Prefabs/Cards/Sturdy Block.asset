@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d2a205ea06a1ac42a0fa1638c06b605, type: 3}
+  m_Name: Sturdy Block
+  m_EditorClassIdentifier: 
+  name: Basic Sturdy Block
+  icon: {fileID: 21300000, guid: 19a7ad8a847c3024ebec2e7f09396ee4, type: 3}
+  description: Block with extra 5 defense
+  tier: 0
+  cardType: 1
+  staminaCost: 6
+  damage: 0
+  defense: 5
+  healing: 0
+  percent: 0

@@ -11,7 +11,7 @@ public class EquipmentManager : MonoBehaviour
 		instance = this;
 	}
 
-	//Values
+	//Valuesf
 	public Equipment[] currentEquipment;
 
 	//Delegate
@@ -20,7 +20,7 @@ public class EquipmentManager : MonoBehaviour
 
 
 	//Basic Functions
-	void Start(){
+	public void Init(){
 		int numSlots = System.Enum.GetNames(typeof(EquipmentSlot)).Length;
 		currentEquipment = new Equipment[numSlots];
 	}

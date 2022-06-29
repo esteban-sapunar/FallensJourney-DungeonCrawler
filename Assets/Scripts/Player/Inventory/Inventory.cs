@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+	//Delegate
+	public delegate void OnItemChanged();
+	public OnItemChanged OnItemChangedCallback;
+
+	//Values
+	public int space = 16;
+	public List<Item> items = new List<Item>();
+	
 	#region Singleton
 	public static Inventory instance;
 	void Awake(){
@@ -14,20 +22,13 @@ public class Inventory : MonoBehaviour
 		instance = this;
 	}
 	#endregion
-	//Delegate
-	public delegate void OnItemChanged();
-	public OnItemChanged OnItemChangedCallback;
-
-	//Values
-	public int space = 20;
-	public List<Item> items = new List<Item>();
 
 	//Methods
 	public bool Add (Item item){
 		if(items.Count < space){
 			items.Add(item);
 			if(OnItemChangedCallback != null){
-				OnItemChangedCallback.Invoke();	
+				OnItemChangedCallback.Invoke();
 			}
 			return true;
 		}

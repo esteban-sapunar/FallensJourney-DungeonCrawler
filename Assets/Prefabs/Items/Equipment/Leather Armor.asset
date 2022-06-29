@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51a36aa60c04e0649ae048df7a9fb483, type: 3}
+  m_Name: Leather Armor
+  m_EditorClassIdentifier: 
+  name: Leather Armor
+  icon: {fileID: 21300000, guid: ce67ff63547feb74096f9d61bb5c3ca9, type: 3}
+  description: Old but strong leather armor
+  value: 8
+  tier: 1
+  healValue: 0
+  attackModifier: 0
+  armorModifier: 2
+  defenseModifier: 0
+  weightModifier: 2
+  equipSlot: 1
